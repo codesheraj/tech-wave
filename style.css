@@ -1,9 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+ @import "tailwindcss"
+
 /* multiple use */
-body{
-  font-family: "Inter", sans-serif;
+body{ 
+    font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
+
+}
+
+
+
+main{
+    border: 1px solid tomato;
+    max-width: 1600px;
+
+
+    
+}
+
+/* header section */
+
+.nav-section{
+  color:#FFFFFF ;
+  display: flex;
+  max-width: 1600px;
+  border: 2px solid;
+  justify-content: space-around;
+  margin: 0 auto;
+  background-color: #1A0B2E;
+  align-items: center;
+}
+
+html{
+  font-size: 16px;
+}
+body{
+  color: #FFFFFF;
+  background-color: #1A0B2E;
+}
+header{
+  background-color: #1A0B2E;
+}
+  
+.nav-ul{
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.nav-title{
+  font-size: 2rem;
+}
+
+nav ul {
+  font-size: 1;
+}
+.nav-wave{
+  color: ;
 }
