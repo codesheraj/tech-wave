@@ -759,4 +759,38 @@ margin-top: 1rem;
   }
   .apple-poadcast img{
     width: 15px;
+  }}
+
+  /* animation */
+
+  .banner-button-1{
+  
+  padding: 0.78rem 1rem;
+  border: none;
+  border-radius: 1000px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+  @keyframes button{
+    0% {
+      background: linear-gradient(to right top, #F7E93F, #aaa425, #ceb216);
+    }
+    35% {
+      background: linear-gradient(to right top,  #3da841, #349b49, #054931);
+    }
+
+  70% {
+     background: linear-gradient(to right top, #b32a2a, #a72475, #93530f )
+  }
+
+  100%{
+    background: linear-gradient(to right top,  #FB09B4, #F7E93F, #9100F8 )
+  }
+
+  }
+
+  .nav-button{
+    animation: button 2s infinite ;
   }
