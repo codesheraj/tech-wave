@@ -128,6 +128,7 @@ border-bottom: 1px solid #2b0e51
   text-transform: uppercase;
   color: black;
   box-shadow: 0 0 15px 5px #00ff884f;
+  transition: all ease 3s ;
 }
 
 .banner-text{
@@ -790,7 +791,141 @@ margin-top: 1rem;
   }
 
   }
+  @keyframes image-border{
+    0% {
+      box-shadow: 0px 0px 100px 0px chartreuse
+    }
+    20% {
+      box-shadow: 0px 0px 140px 0px  #FB09B4 ;
+    }
+    30% {
+      box-shadow: 0px 10px 130px 0px  #ab5d9364 ;
+    }
+    40% {
+      box-shadow: 0px 0px 120px 0px #00FF88
+    }
+
+  70% {
+    box-shadow: 0px 0px 300px 0px cyan
+  }
+  85% {
+    box-shadow: 0px 0px 100px 0px cyan
+  }
+
+  100%{
+   box-shadow: 1px 10px 100px 
+  }
+
+  }
+  @keyframes button-border{
+    0% {
+      box-shadow: -10px 0px 15px 0px 
+    }
+    20% {
+      box-shadow: -7px 0px 15px 0px 
+    }
+    30% {
+      box-shadow: -4px 0px 15px 0px 
+    }
+    40% {
+      box-shadow: -1px 0px 15px 0px 
+    }
+
+  50% {
+    box-shadow: 1px 0px 15px 0px 
+  }
+  60% {
+    box-shadow: 4px 0px 15px 0px 
+  }
+  70% {
+    box-shadow: 7px 0px 15px 0px 
+  }
+  80% {
+    box-shadow: 10px 0px 15px 0px 
+  }
+  90% {
+    box-shadow: 7px 0px 15px 0px 
+  }
+  93% {
+    box-shadow: 4px 0px 15px 0px 
+  }
+  97% {
+    box-shadow: 1px 0px 15px 0px 
+  }
+
+  100%{
+   box-shadow: -3px 0px 10px  0px
+  }
+  }
+
+  @keyframes ping-pong{
+    0% {
+      transform: translateY(-10px) scaleX(1) ;
+      .banner-bage::before{
+        content: rakib;
+      }
+      
+    }
+    25% {
+      transform: translateY(-30px);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+    75% {
+      transform: translateY(-40px);
+    }
+    100%{
+      transform: translateY(-30px);
+    }
+    }
+  
 
   .nav-button{
-    animation: button 2s infinite ;
+    /* transition: all; */
+    /* animation: button 50s cubic-bezier(0.075, 0.82, 0.165, 1) infinite ; */
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: button-border 5s ease-in-out infinite;
+  }
+
+  .image-1{
+    border-radius: 999px;
+    animation: image-border 5s linear infinite;
+    background:none;
+  }
+
+  .banner-bage{
+    animation: ping-pong 10s linear 5s 1 ;
+  }
+
+  .banner-bage:hover{
+    top: -50px;
+    rotate: 40deg;
+    
+  }
+
+  .banner-button-1:hover{
+    transform: rotate(2deg) translatex(-30px);
+    cursor: pointer;
+  }
+
+
+  .btn{
+    transition: all 1s;
+  }
+
+  .btn:hover{
+    background: rgba(128, 128, 128, 0.135);
+    color: rgba(29, 179, 6, 0.594);
+  }
+
+  .section-hover , .iframe-card{
+    transition: all 2s ease;
+  }
+  .section-hover:hover  {
+    transform:  scale(1.03) translateY(-10px) translateX(-20px);}
+    
+  .iframe-card:hover  {
+    transform:  scale(1.06) translateY(-10px);
+    
   }
